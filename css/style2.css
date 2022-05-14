@@ -1,3 +1,7 @@
-.negrita{
+.negrita {
     font-weight: bold;
+}
+
+body {
+    background-color: bisque;
 }
