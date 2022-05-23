@@ -1269,6 +1269,8 @@ article {
 
 .cd-headline.slide .cd-words-wrapper {
   color: #FFC05C;
+  -webkit-text-stroke: 1px black;
+  
 }
 
 ul.social-icons {
