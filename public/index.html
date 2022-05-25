@@ -135,7 +135,7 @@
         </div>
     </header>
 
-    
+
     <!--
 ==================================================
 Slider Section Start
@@ -213,8 +213,10 @@ Historia Section Start
                         <h2>
                             CARRERA OFICIAL
                         </h2>
-                        
-                        <p>La carrera oficial de la Semana Santa de Écija es el recorrido común para todas las hermandades que procesionan durante la Semana Santa.Hasta 2003 la Carrera Oficial comenzaba en la Plaza de España para discurrir frente al Ayuntamiento y seguir por las calles Mas y Prat y Santa Cruz. La Semana Santa de 2007 estuvo ausente de Carrera Oficial por las obras que se estaban llevando a cabo en la Plaza de España. Desde el año 2008, el Consejo General de Hermandad y Cofradías de la ciudad de Écija impuso una nueva Carrera Oficial. </p>
+
+                        <p>La carrera oficial de la Semana Santa de Écija es el recorrido común para todas las hermandades que procesionan durante la Semana Santa.Hasta 2003 la Carrera Oficial comenzaba en la Plaza de España para discurrir frente al Ayuntamiento
+                            y seguir por las calles Mas y Prat y Santa Cruz. La Semana Santa de 2007 estuvo ausente de Carrera Oficial por las obras que se estaban llevando a cabo en la Plaza de España. Desde el año 2008, el Consejo General de Hermandad
+                            y Cofradías de la ciudad de Écija impuso una nueva Carrera Oficial. </p>
                     </div>
                 </div>
             </div>
@@ -226,12 +228,13 @@ Historia Section Start
                 <div class="col-md-6 col-sm-6">
                     <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
                         <br>
-                        
+
                         <h2>
                             IGLESIA DE SANTA CRUZ
                         </h2>
                         <p>
-                            Esta es una de las estampas más emblemáticas de la Semana Santa Ecijana, ya que, no todas las hermandades trascurren su recorrido por ahi, pero las que si lo hacen, realizan una reverencia a la patrona de el pueblo (Virgen del Valle) que se encuentra en el interior mirando hacia la puerta. Las hermandades que realizan su estación de penitencia por esa localización son, el Olivo (Domingo de Ramos), la Yedra (Lunes Santo), San Gil (Miercoles Santo), la Sangre (Jueves Santo)
+                            Esta es una de las estampas más emblemáticas de la Semana Santa Ecijana, ya que, no todas las hermandades trascurren su recorrido por ahi, pero las que si lo hacen, realizan una reverencia a la patrona de el pueblo (Virgen del Valle) que se encuentra
+                            en el interior mirando hacia la puerta. Las hermandades que realizan su estación de penitencia por esa localización son, el Olivo (Domingo de Ramos), la Yedra (Lunes Santo), San Gil (Miercoles Santo), la Sangre (Jueves Santo)
                             , el Silencio (Viernes Santo), el Resucitado (Domingo de Resurrección)
                         </p>
 
@@ -244,11 +247,22 @@ Historia Section Start
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <br>
+            <div class="row" style="text-align: center;">
+                <div class="col">
+                    <h2>Tiempo para Semana Santa 2023</h2>
+                    <hr>
+                    <br>
+                    <br>
+                    <p id="contador" style="font-weight: bold; font-size: 40px; "></p>
+                </div>
+            </div>
         </div>
     </section>
-    <br> <br>
-    
-        <footer class="container-fluid page-footer font-small blue " style="background-color:white; color: #444; padding-bottom: 5%; font-weight: 500;">
+    <br>
+    < <footer class="container-fluid page-footer font-small blue " style="background-color:white; color: #444; padding-bottom: 5%; font-weight: 500;">
 
         <div class="container-fluid">
             <div class="row">
@@ -294,25 +308,55 @@ Historia Section Start
 
 
 
-    <!-- Template Javascript Files
+        <!-- Template Javascript Files
 	================================================== -->
-    <!-- jquery -->
-    <script src="../plugins/jQurey/jquery.min.js"></script>
-    <!-- Form Validation -->
-    <script src="../plugins/form-validation/jquery.form.js"></script>
-    <script src="../plugins/form-validation/jquery.validate.min.js"></script>
-    <!-- owl carouserl js -->
-    <script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="../plugins/bootstrap/bootstrap.min.js"></script>
-    <!-- wow js -->
-    <script src="../plugins/wow-js/wow.min.js"></script>
-    <!-- slider js -->
-    <script src="../plugins/slider/slider.js"></script>
-    <!-- Fancybox -->
-    <script src="../plugins/facncybox/jquery.fancybox.js"></script>
-    <!-- template main js -->
-    <script src="../js/main.js"></script>
+        <!-- jquery -->
+        <script src="../plugins/jQurey/jquery.min.js"></script>
+        <!-- Form Validation -->
+        <script src="../plugins/form-validation/jquery.form.js"></script>
+        <script src="../plugins/form-validation/jquery.validate.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="../plugins/owl-carousel/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="../plugins/bootstrap/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="../plugins/wow-js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="../plugins/slider/slider.js"></script>
+        <!-- Fancybox -->
+        <script src="../plugins/facncybox/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="../js/main.js"></script>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("April 1, 2024 23:55:55").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("contador").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("contador").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
 </body>
 
 </html>
