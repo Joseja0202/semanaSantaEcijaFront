@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="../css/styleMaps.css">
+    
 </head>
 
 <body>
@@ -160,6 +161,7 @@ Global Page Section Start
         <br> <br> <br> <br> <br> <br>
         <div class="container" style="text-align: center;">
             <h3> Paso de la Entrada de Jesús en Jerusalén</h3>
+            <hr class="vertical">
         </div>
         <br> <br>
         <div class="container">
@@ -185,6 +187,7 @@ Global Page Section Start
         <br> <br>
         <div class="container" style="text-align: center;">
             <h3> Paso De Nuestro Padre Jesús Cautivo</h3>
+            <hr class="vertical">
         </div>
         <br> <br>
         <div class="container">
@@ -210,6 +213,7 @@ Global Page Section Start
 
         <div class="container" style="text-align: center;">
             <h3> Paso De Nuestra Señora de las Lágrimas </h3>
+            <hr class="vertical">
         </div>
         <br> <br>
         <div class="container">
@@ -283,8 +287,111 @@ Global Page Section Start
         <div id="map"></div>
         <br>
     </div>
-    <br> <br>
+    <br> <br> <br>
+    <div class="container">
+        <h2 style="text-align: center;">Introduce tus creedenciales para asociarte a una hermandad</h2>
+        <hr class="vertical">
+        <br> <br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container-fluid">
+                    <form role="form" id="register-form">
+                        <div class="form-body">
+                            
+                            <div class="form-group">
+                                <div class="input-group mb-1">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="nombre" name="nombre" type="text" class="form-control" placeholder="nombre    (José)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="apellido1" name="apellido1" type="text" class="form-control" placeholder="apellido1     (Gómez)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
+                
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="apellido2" name="apellido2" type="text" class="form-control" placeholder="apellido2    (Jose)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
+                
+                
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="fechaNacimiento" name="fecha_nacimiento" type="text" class="form-control" placeholder="fecha de nacimiento   (12-02-2002)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
+                
+                
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="telefono" name="telefono" type="number" class="form-control" placeholder="numero de telefono   (6/9/7 -- 75159863)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
 
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="direccion" name="direccion" type="number" class="form-control" placeholder="direccion    (Calle Juan Gálvez, 38)" required>
+                                </div>
+                                <span class="help-block" id="error"></span>
+                            </div>
+
+                            <div class="form-group ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                                    <input id="dni" name="dni" type="text" class="form-control" placeholder="dni    (12121212L)" required>
+                                </div>
+                                <p class="help-block" id="error"></p>
+                            </div>
+
+                            <input id="hermandad" type="hidden" name="hermandad" value="1" ></input>
+
+                
+                        </div>
+                
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-primary" id="btnGuardar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid" style="background-color: white; border-radius: 5px;">
+                    <br>
+                    <h4 style="text-align: center; font-weight:bold;">Nuevos hermanos de esta hermandad</h4>
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <ul>
+                        <ol>sad</ol>
+                        <br>
+                        <ol>sad</ol>
+                        <br>
+                        <ol>sad</li>
+                        <br>
+                    </ul>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br>
     <footer class="container-fluid page-footer font-small blue " style="background-color:white; color: #444; padding-bottom: 5%; font-weight: 500;">
 
         <div class="container-fluid">
@@ -350,6 +457,8 @@ Global Page Section Start
     <!-- template main js -->
     <script src="../js/main.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
     <script>
         let map;
         let marker;
@@ -366,6 +475,7 @@ Global Page Section Start
         });
         }
     </script>
+    
 </body>
 
 </html>
