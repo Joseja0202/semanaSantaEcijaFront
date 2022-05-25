@@ -173,7 +173,8 @@ Global Page Section Start
                     </p>
                     <br>
                     <h4 class="negrita">CURIOSIDADES</h4>
-                    <p>La imagen ha salido con la cruz cargada en varias posiciones. Es la única Hermandad con el título de Pontificia, otorgado gracias a las bulas papales que posee, y en el cortejo se representa con una Bandera Pontifica con los colores del Vaticano.</p>
+                    <p>La imagen ha salido con la cruz cargada en varias posiciones. Es la única Hermandad con el título de Pontificia, otorgado gracias a las bulas papales que posee, y en el cortejo se representa con una Bandera Pontifica con los colores
+                        del Vaticano.</p>
 
                     <p class="negrita">Nuestro Padre Jesús Nazareno porta 35 costaleros</p>
                 </div>
@@ -201,12 +202,14 @@ Global Page Section Start
                 </div>
                 <div class="col-md-7">
 
-                    <p>La Dolorosa es acompañada por San Juan Evangelista, siendo ambas imágenes de Ricardo Comas a comienzos de la década de 1960. 
+                    <p>La Dolorosa es acompañada por San Juan Evangelista, siendo ambas imágenes de Ricardo Comas a comienzos de la década de 1960.
                     </p>
-                    <p>Procesiona en impresionante paso de palio. La orfebrería del magnificoes de Villarreal.  El manto de terciopelo azul bordado en oro fino es del sevillano Juan Manuel Rodríguez Ojeda. Las bambalinas bordadas en oro sobre terciopelo granate es obra de Joaquín Ojeda y el techo de palio con bordados del siglo XVIII sobre terciopelo granate </p>
+                    <p>Procesiona en impresionante paso de palio. La orfebrería del magnificoes de Villarreal. El manto de terciopelo azul bordado en oro fino es del sevillano Juan Manuel Rodríguez Ojeda. Las bambalinas bordadas en oro sobre terciopelo granate
+                        es obra de Joaquín Ojeda y el techo de palio con bordados del siglo XVIII sobre terciopelo granate </p>
                     <br>
                     <h4 class="negrita">CURIOSIDADES</h4>
-                    <p>Es la única Dolorosa acompañada ininterrumpidamente por San Juan Evangelista. El palio en todo su conjunto es una extraordinaria joya del patrimonio ecijano, siendo uno de los que mejores suenan. En 1967 se adquiere el manto a la Hermandad de los Negritos de Sevilla.</p>
+                    <p>Es la única Dolorosa acompañada ininterrumpidamente por San Juan Evangelista. El palio en todo su conjunto es una extraordinaria joya del patrimonio ecijano, siendo uno de los que mejores suenan. En 1967 se adquiere el manto a la Hermandad
+                        de los Negritos de Sevilla.</p>
 
                     <p class="negrita">María Santísima de las Misericordias porta 30 costaleros</p>
                 </div>
@@ -262,7 +265,87 @@ Global Page Section Start
         <div id="map"></div>
         <br>
     </div>
-    <br> <br>
+    <br> <br> <br>
+    <div class="container">
+        <h2 style="text-align: center;">Introduce tus creedenciales para asociarte a una hermandad</h2>
+        <hr class="vertical">
+        <br> <br>
+        <div class="row">
+            <form role="form" id="register-form">
+                <div class="form-body">
+
+                    <div class="form-group">
+                        <div class="input-group mb-1">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="nombre" name="nombre" type="text" class="form-control" placeholder="nombre    (José)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="apellido1" name="apellido1" type="text" class="form-control" placeholder="apellido1     (Gómez)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="apellido2" name="apellido2" type="text" class="form-control" placeholder="apellido2    (Jose)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="fecha_nacimiento" name="fecha_nacimiento" type="text" class="form-control" placeholder="fecha de nacimiento   (12-02-2002)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="telefono" name="telefono" type="text" class="form-control" placeholder="numero de telefono   (6/9/7 -- 75159863)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="direccion" name="direccion" type="text" class="form-control" placeholder="direccion    (Calle Juan Gálvez, 38)">
+                        </div>
+                        <span class="help-block" id="error"></span>
+                    </div>
+
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></div>
+                            <input id="dni" name="dni" type="text" class="form-control" placeholder="dni    (12121212L)">
+                        </div>
+                        <p class="help-block" id="error"></p>
+                    </div>
+
+                    <input id="hermandad" type="hidden" name="hermandad" value="9"></input>
+
+
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn btn-primary" id="btnGuardar">Enviar</button>
+                </div>
+            </form>
+
+        </div>
+        <br>
+        <h5>Tus datos serás recogidos y enviados a la hermandad, se te enviara un sms para citarte y firmar tu primer recibo como hermano en la sede de la hermandad.</h5>
+    </div>
+    <br> <br> <br>
     <footer class="container-fluid page-footer font-small blue " style="background-color:white; color: #444; padding-bottom: 5%; font-weight: 500;">
 
         <div class="container-fluid">
@@ -302,7 +385,7 @@ Global Page Section Start
         </div>
 
 
-        </footer>
+    </footer>
 
 
 
@@ -328,20 +411,86 @@ Global Page Section Start
     <!-- template main js -->
     <script src="../js/main.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+
     <script>
         let map;
         let marker;
-        function iniciarMap(){
-        var coord = {lat:37.54187805 ,lng:-5.077483423774573};
-        map = new google.maps.Map(document.getElementById("map"),{
-        zoom: 16,
-        center: coord,
+
+        function iniciarMap() {
+            var coord = {
+                lat: 37.54187805,
+                lng: -5.077483423774573
+            };
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: coord,
+            });
+
+            marker = new google.maps.Marker({
+                position: coord,
+                map: map,
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        $('#btnGuardar').click(function(e) {
+
+            let nombre = $('#nombre').val();
+            let apellido1 = $('#apellido1').val();
+            let apellido2 = $('#apellido2').val();
+            let fecha_nacimiento = $('#fecha_nacimiento').val();
+            let telefono = $('#telefono').val();
+            let direccion = $('#direccion').val();
+            let dni = $('#dni').val();
+            let hermandad = $('#hermandad').val();;
+
+
+
+            let values2 = {
+                nombre: nombre,
+                apellido1: apellido1,
+                apellido2: apellido2,
+                fecha_nacimiento: fecha_nacimiento,
+                telefono: telefono,
+                direccion: direccion,
+                dni: dni,
+                hermandad: hermandad
+            };
+
+
+            console.log(nombre);
+            console.log(apellido1);
+            console.log(apellido2);
+            console.log(fecha_nacimiento);
+            console.log(telefono);
+            console.log(direccion);
+            console.log(dni);
+            console.log(hermandad);
+
+            ajaxPost(values2);
         });
 
-        marker = new google.maps.Marker({
-        position: coord,
-        map: map,
-        });
+        function ajaxPost(values2) {
+            console.log(JSON.stringify(values2));
+            console.log(values2);
+            $.ajax({
+                method: "POST",
+                url: "https://semanasantaecijaapi.herokuapp.com/api/hermano",
+                data: values2,
+                contentType: "application/x-www-form-urlencoded",
+                success: function(d) {
+                    console.log(d);
+                }
+
+
+                ,
+                error: function(r) {
+                    console.log(r);
+                    console.log(values2);
+                }
+
+            });
         }
     </script>
 </body>
